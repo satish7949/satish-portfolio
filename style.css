@@ -10,7 +10,7 @@ nav {
   display:flex;
   justify-content:space-between;
   padding:10px 20px;
-  position:fixed;
+  /* position:fixed; */
   width:100%;
   background:rgba(0,0,0,0.7);
   backdrop-filter:blur(10px);
@@ -295,4 +295,5 @@ input, textarea {
 
 .hire-list li{
   margin:10px 0;
+
 }
