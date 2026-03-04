@@ -1,0 +1,298 @@
+body {
+  margin:0;
+  font-family: Arial;
+  scroll-behavior:smooth;
+  background:#0f0f1a;
+  color:white;
+}
+
+nav {
+  display:flex;
+  justify-content:space-between;
+  padding:10px 20px;
+  position:fixed;
+  width:100%;
+  background:rgba(0,0,0,0.7);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+nav ul {
+  display:flex;
+  gap:20px;
+  list-style:none;
+}
+
+nav a {
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+nav a:hover {
+  color:#667eea;
+}
+
+.hero {
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+button {
+  padding:10px 20px;
+  border:none;
+  background:#667eea;
+  color:white;
+  cursor:pointer;
+  border-radius:25px;
+  transition:0.3s;
+}
+
+button:hover {
+  transform:scale(1.1);
+}
+
+.section {
+  padding:100px 50px;
+  text-align:center;
+}
+
+.project-card {
+  background:#1e1e2f;
+  padding:20px;
+  margin:20px auto;
+  width:60%;
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.project-card:hover {
+  transform:translateY(-10px);
+}
+
+form {
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  width:50%;
+  margin:auto;
+}
+
+input, textarea {
+  padding:10px;
+  border-radius:5px;
+  border:none;
+}
+
+/* =============================================== */
+.profile-section {
+  padding:100px 20px;
+  background:#111827;
+  color:white;
+  display:flex;
+  justify-content:center;
+}
+
+.profile-container {
+  display:flex;
+  align-items:center;
+  gap:50px;
+  max-width:1000px;
+}
+
+.profile-image img {
+  width:250px;
+  height:250px;
+  border-radius:50%;
+  object-fit:cover;
+  border:5px solid #667eea;
+  box-shadow:0 0 30px rgba(102,126,234,0.6);
+  transition:0.5s;
+}
+
+.profile-image img:hover {
+  transform:scale(1.05);
+}
+
+.profile-info {
+  max-width:500px;
+}
+
+.profile-info h2 {
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.profile-info h4 {
+  color:#667eea;
+  margin-bottom:20px;
+}
+
+.social-links {
+  margin-top:20px;
+  display:flex;
+  gap:20px;
+}
+
+.social-links a {
+  text-decoration:none;
+  color:white;
+  padding:8px 15px;
+  border:1px solid #667eea;
+  border-radius:20px;
+  transition:0.3s;
+}
+
+.social-links a:hover {
+  background:#667eea;
+}
+
+
+/* =============resume section=========== */
+.resume-btn{
+  display:inline-block;
+  padding:12px 25px;
+  background:#667eea;
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
+  transition:0.3s;
+}
+
+.resume-btn:hover{
+  transform:scale(1.1);
+}
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px){
+
+  nav{
+    flex-direction:column;
+    align-items:center;
+    padding:15px;
+  }
+
+  nav ul{
+    flex-direction:column;
+    gap:10px;
+    margin-top:10px;
+  }
+
+  .hero-container{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-left{
+    text-align:center;
+  }
+
+  .hero-right{
+    margin-top:30px;
+  }
+
+  .profile-container{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .project-card{
+    width:90%;
+  }
+
+  form{
+    width:90%;
+  }
+}
+
+/* review section form */
+.review-form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  width:50%;
+  margin:auto;
+}
+
+.review-form input,
+.review-form textarea{
+  padding:10px;
+  border-radius:5px;
+  border:none;
+}
+
+.stars span{
+  font-size:25px;
+  cursor:pointer;
+  opacity:0.5;
+  transition:0.3s;
+}
+
+.stars span.active{
+  opacity:1;
+}
+
+.review-list{
+  margin-top:40px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  align-items:center;
+}
+
+.review-card{
+  background:#1e1e2f;
+  padding:20px;
+  width:60%;
+  border-radius:15px;
+}
+
+/* =============== */
+.open-tag{
+  margin-top:15px;
+  color:#00ffcc;
+  font-weight:bold;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink{
+  0%{opacity:1;}
+  50%{opacity:0.5;}
+  100%{opacity:1;}
+}
+
+/* skills */
+.skill{
+  width:60%;
+  margin:20px auto;
+  text-align:left;
+}
+
+.bar{
+  background:#333;
+  height:10px;
+  border-radius:20px;
+}
+
+.progress{
+  height:10px;
+  background:#667eea;
+  border-radius:20px;
+}
+
+/* why hire me */
+.hire-list{
+  list-style:none;
+  padding:0;
+}
+
+.hire-list li{
+  margin:10px 0;
+}
